@@ -957,3 +957,13 @@ contract ExpiredProposalPin {
         completed[msg.sender] = true;
     }
 }
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract VotesModulePin {
+    mapping(address => bool) public completed;
+
+    function complete() external {
+        completed[msg.sender] = true;
+    }
+}
